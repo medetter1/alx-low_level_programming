@@ -7,5 +7,6 @@
  */
 int main(void)
 {
+printf("Task 7");
 return (0);
 }
