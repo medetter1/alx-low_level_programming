@@ -3,10 +3,9 @@
 /* this part is the header*/
 int main(void)
 {
-        /* this is the body 
-         * and the first part executed in the program
-         */
-
-      /*printf("program for test2");*/
-        return (0);
+/* this is the body 
+ * and the first part executed in the program
+ */
+/*printf("program for test2");*/
+return (0);
 }
