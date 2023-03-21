@@ -2,7 +2,7 @@
 /**
  * print_alphabet void description
  *
- * return void 
+ * return void
  */
 
 void print_alphabet(void)
