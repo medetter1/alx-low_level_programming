@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+ * print alphabet description
+ *
+ *
+ */
+
 void print_alphabet(void)
 {
 	int i;
