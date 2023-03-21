@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _print_last_digits - function
+ * _print_last_digit - function
  * @x: single letter input
  * Return: int
  */
