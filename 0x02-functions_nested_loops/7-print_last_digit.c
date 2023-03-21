@@ -1,9 +1,10 @@
 #include "main.h"
 /**
  * _print_last_digit - function
- * @x: single letter input
+ * @x: single input
  * Return: int
  */
+
 int print_last_digit(int x)
 {
 	int y;
