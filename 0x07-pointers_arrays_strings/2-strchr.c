@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+ * _strchr _ function strch
+ * @s: string
+ * @c: character to search about it
+ * Return: string
+ */
 
 
 char *_strchr(char *s, char c)
