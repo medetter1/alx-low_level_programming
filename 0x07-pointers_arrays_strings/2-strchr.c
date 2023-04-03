@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strchr _ function strch
+ * _strchr - function strch
  * @s: string
  * @c: character to search about it
  * Return: string
