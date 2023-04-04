@@ -32,7 +32,8 @@ char *_strstr(char *haystack, char *needle)
 
 	n = lenght_str(needle);
 	j = 0;
-
+	if (n == 0)
+		return (haystack);
 	while (haystack[j] != '\0')
 	{
 		if (haystack[j] == needle[0])
