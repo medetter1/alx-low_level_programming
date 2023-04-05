@@ -58,7 +58,8 @@ void print_diagsums(int *a, int size)
 	sum2 = 0;
 
 	sum1 = print_diag_left(a, size);
-	printf("%d\n",sum1);
+	printf("%d,", sum1);
+	printf(" ");
 	sum2 = print_diag_right(a, size);
-	printf("%d\n",sum2);
+	printf("%d\n", sum2);
 }
