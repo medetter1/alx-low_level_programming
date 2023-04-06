@@ -2,7 +2,7 @@
 /**
  * _length_str - the size of string
  * @st: string
- * Retuen: integer
+ * Return: integer
  */
 int _length_str(char *st)
 {
