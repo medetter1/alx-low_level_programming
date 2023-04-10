@@ -4,20 +4,17 @@
  * main - minimum number of coins.
  * @argc: argument counter.
  * @argv: argument array.
- *
  * Return: integer.
  */
 int main(int argc, char *argv[])
 {
-	int money, coins;
+int money = 0, coins = 0;
 
-	money = 0;
-	coins = 0;
-	if (argc > 2 || argc < 2)
-	{	
-		printf("Error\n");
-		return (1);
-	}
+if (argc > 2 || argc < 2)
+{
+	printf("Error\n");
+	return (1);
+}
 	if (atoi(argv[1]) < 0)
 	{
 		printf("0\n");
@@ -44,16 +41,16 @@ int main(int argc, char *argv[])
 			}
 			else if (money >= 2)
 			{
-				money = money - 2;
-				coins++;
+			money = money - 2;
+			coins++;
 			}
 			else
-			{	
-				money = money - 1;
-				coins++;
+			{
+			money = money - 1;
+			coins++;
 			}
 		}
-		printf("%d\n", coins);
+	printf("%d\n", coins);
 	}
 	return (0);
 }
