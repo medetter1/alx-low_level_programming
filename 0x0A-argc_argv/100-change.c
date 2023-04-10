@@ -24,33 +24,27 @@ if (argc > 2 || argc < 2)
 		money = atoi(argv[1]);
 		while (money)
 		{
+			coins++;
 			if (money >= 25)
 			{
 				money = money - 25;
-				coins++;
 			}
 			else if (money >= 10)
 			{
 				money = money - 10;
-				coins++;
 			}
 			else if (money >= 5)
 			{
 				money = money - 5;
-				coins++;
 			}
 			else if (money >= 2)
 			{
-			money = money - 2;
-			coins++;
+				money = money - 2;
 			}
 			else
-			{
-			money = money - 1;
-			coins++;
-			}
+				money = money - 1;
 		}
 	printf("%d\n", coins);
 	}
-	return (0);
+return (0);
 }
