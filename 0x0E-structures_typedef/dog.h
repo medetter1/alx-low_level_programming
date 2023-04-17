@@ -1,11 +1,12 @@
-#ifndef DOG
-#define DOG
+#ifndef DOGY
+#define DOGY
 /**
- * description: infos dog
- * struct og - dog structure
+ * struct dog - dog structure
  * @name: name of dog
  * @owner: the owner dog
  * @age: age of dog
+ *
+ * Description: Dog informations
  */
 struct dog
 {
@@ -14,10 +15,10 @@ struct dog
 	float age;
 };
 
-typedef struct dog first_dog;
+typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-first_dog *new_dog(char *name, float age, char *owner);
-void free_dog(first_dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
 #endif
