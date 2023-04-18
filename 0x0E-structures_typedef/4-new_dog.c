@@ -10,7 +10,7 @@ int len_infos(char *s)
 {
 	int i = 0;
 
-	while (s[i])
+	while (s[i] != '\0')
 	{
 		i++;
 	}
@@ -27,37 +27,36 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
 	int lenName = 0, lenOwner = 0, i, j;
-	char *na, *ow;
 
 	lenName = len_infos(name);
 	lenOwner = len_infos(owner);
 
-	na = malloc(sizeof(char) * lenName + 1);
-	if (na == NULL)
-	{
-		return (NULL);
-	}
-	ow = malloc(sizeof(char) * lenOwner + 1);
-	if (ow == NULL)
-	{
-		free(na);
-		return (NULL);
-	}
 	d = malloc(sizeof(dog_t));
 	if (d == NULL)
 	{
-		free(na);
-		free(ow);
+		return (NULL);
+	}
+	d->name = malloc(sizeof(char) * (lenName + 1));
+	if (d->name == NULL)
+	{
+		free(d);
+		return (NULL);
+	}
+	d->owner = malloc(sizeof(char) * (lenOwner + 1));
+	if (d->owner == NULL)
+	{
+		free(d->name);
+		free(d);
 		return (NULL);
 	}
 	d->age = age;
-	for (i = 0; i < lenName; i++)
+	for (i = 0; i <= lenName; i++)
 	{
-		na[i] = name[i];
+		d->name[i] = name[i];
 	}
-	for (j = 0; j < lenOwner; j++)
+	for (j = 0; j <= lenOwner; j++)
 	{
-		ow[j] = owner[j];
+		d->owner[j] = owner[j];
 	}
 	/*d->name = na;*/
 	/*d->age = age;*/
