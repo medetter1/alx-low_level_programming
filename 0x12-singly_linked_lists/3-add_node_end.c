@@ -1,6 +1,6 @@
 #include <string.h>
 #include "lists.h"
-
+#include <stdlib.h>
 /**
  * add_node_end -function to add new node end
  * @head: pointer of node
